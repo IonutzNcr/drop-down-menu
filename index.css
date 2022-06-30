@@ -24,6 +24,14 @@ ul{
     background-color: rgba(160, 253, 222, 0.315);
 }
 
-.hidden{
-    display: none;
+.effect{
+    width: 100vw;
+    height:100px;
+    opacity: 0;
+    transition:transform 300ms ease-in-out, opacity 600ms ease-out;
 }
+.main:hover .effect{
+    transform: translate(100px,0);
+    opacity:1;
+}
+

@@ -1,12 +1,11 @@
 function dropDown(li, nav) {
-  const navs = document.querySelectorAll("nav");
-
-  li.addEventListener("click", () => {
+  
+  li.addEventListener("mouseover", () => {
     // eslint-disable-next-line no-plusplus
-    for (let i = 1; i < navs.length; i++) {
-      navs[i].classList.add("hidden");
-    }
-    nav.classList.toggle("hidden");
+    
+    nav.classList.toggle("effect");
+    
+    
   });
 }
 
