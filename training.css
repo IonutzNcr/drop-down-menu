@@ -1,37 +1,36 @@
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
-    
-    
+
 }
 
-.box{
-    
-    position:absolute;
-    top:0;
-    left:0;
+body{
+    position: relative;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.trigger{
+
     width:200px;
     height: 200px;
     background-color: #ddd;
-    
-    opacity: 0;
-    transition:transform 300ms ease-in-out, opacity 100ms ease-in-out;
-    display:inline-block;
-    
+    z-index:9;
 }
 
-.trigger{
+.victim{
     
-    position: relative;
-    width: 200px;
-    height: 200px;
-   
-    background-color: #ddd;
-   
+    position:absolute;
+    top:0;
+    z-index:1;
+    width:200px;
+    height:200px;
+    background-color: pink;
+    pointer-events: none;
+    transition:transform 100ms ease-in-out ;
 }
 
-.trigger:hover .box{
-    transform: translate(0, 200px);
-    opacity: 1;
+.action{
+    transform:translate(0,200px);
 }
+
