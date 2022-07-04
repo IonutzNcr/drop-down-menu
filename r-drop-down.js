@@ -4,15 +4,15 @@ const activateTransition = (()=>{
     const triggers = document.querySelectorAll(".trigger");
 
     function removeAction(){
-        victims.forEach(e=>e.classList.remove("action-acheter"))
+        victims.forEach(e=>e.classList.remove("action"))
     }
     
     function getAimation(e){
         const victim = document.querySelector(`.victim[data-id="${e.target.dataset.id}"]`);
         removeAction();
-        victim.classList.toggle("action-acheter");
+        victim.classList.toggle("action");
         victim.addEventListener("mouseover",()=>{
-            victim.classList.add("action-acheter");
+            victim.classList.add("action");
         })
         victim.addEventListener("mouseout",removeAction)
     }

@@ -57,14 +57,9 @@ ul li{
     align-items: center;
 }
 
-.victim li{
-   /*  pointer-events: none; */
-}
-
-
 /* Transaction */
 
-.action-acheter{
+.action{
     grid-row: 2/3;
     transform:translate(0,100px);
 

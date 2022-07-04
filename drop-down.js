@@ -44,17 +44,3 @@ triggers.forEach(e=>{
 
 
 
-/* Need to indetify trigger & victim */
-
-/* Psuedo
-  Attribuer a chaque trigger son propre evenement.
-  Mais est ce que l'evenement n'est pas identique.
-
-  Evenement décrit : Sur un click d'un trigger faire descendre le nav qui lui correspond.
-  Egalement reset le precédent trigger on lui enlevant la classe qui declanche l'action. 
-*/
-
-/* Victim = le nav qui subit l'action 
-   TRIGGER = le li qui declenche l'action de la victim
-   */
-
